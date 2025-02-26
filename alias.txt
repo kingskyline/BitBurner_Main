@@ -21,6 +21,7 @@ alias killall="run /utilites/killall.js"
 alias start="run utilites/startup/start-all.js"
 alias startMidGame="run utilites/startup/start-all-Mid-Game.js"
 
+alias prime="run /utilites/startup/Primer.js"
 
 alias delete="run utilites/Delete/DeleteAll.js"
 
