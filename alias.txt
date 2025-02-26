@@ -1,31 +1,31 @@
-alias rebuy=buy BruteSSH.exe; buy FTPCrack.exe; buy relaySMTP.exe; buy HTTPWorm.exe; buy SQLInject.exe; buy ServerProfiler.exe; buy DeepscanV1.exe; buy DeepscanV2.exe; buy AutoLink.exe
+alias rebuy="buy BruteSSH.exe; buy FTPCrack.exe; buy relaySMTP.exe; buy HTTPWorm.exe; buy SQLInject.exe; buy ServerProfiler.exe; buy DeepscanV1.exe; buy DeepscanV2.exe; buy AutoLink.exe"
 
-alias server=run /utilites/managers/server-manager.js
-alias hacknet=run /utilites/managers/hacknet-manager.js
+alias server="run /utilites/managers/server-manager.js"
+alias hacknet="run /utilites/managers/hacknet-manager.js"
 
-alias get=run utilites/stats/get-server-stats.js
-alias ram=run utilites/stats/ram.js
+alias get="run utilites/stats/get-server-stats.js"
+alias ram="run utilites/stats/ram.js"
 
-alias hud=run /utilites/Hud/Custom-Hud.js
+alias hud="run /utilites/Hud/Custom-Hud.js"
 
-alias backdoor1=run /utilites/backdoor.js
+alias backdoor1="run /utilites/backdoor.js"
 
-alias showincome=run /utilites/showincome/Show-Bought-Servers-Income.js;run /utilites/showincome/Show-Hacked-Servers-Income.js;run /utilites/showincome/Show-HackNet-Income.js
+alias showincome="run /utilites/showincome/Show-Bought-Servers-Income.js;run /utilites/showincome/Show-Hacked-Servers-Income.js;run /utilites/showincome/Show-HackNet-Income.js"
 
-alias stocks=run /Hacks/Stocks/stockmaster.js --noisy --fracB 0.1 --fracH 0.1
+alias stocks="run /Hacks/Stocks/stockmaster.js --noisy --fracB 0.1 --fracH 0.1"
 
-alias killall=run /utilites/killall.js
-
-
-
-alias start=run utilites/startup/start-all.js
-alias startMidGame=run utilites/startup/start-all-Mid-Game.js
+alias killall="run /utilites/killall.js"
 
 
-alias delete=run utilites/Delete/DeleteAll.js
+
+alias start="run utilites/startup/start-all.js"
+alias startMidGame="run utilites/startup/start-all-Mid-Game.js"
+
+
+alias delete="run utilites/Delete/DeleteAll.js"
 
 Hacks
 
 
 
-alias xp=run /early/HomeHackerXPDeployer.js;run /early/BoughtServerHackerXPDeployer.js
+alias xp="run /Hacks/Home-Server/XP/HomeHackerXPDeployer.js;run /Hacks/Bought-Servers/XP/BoughtServerHackerXPDeployer.js"
