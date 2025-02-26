@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-import { traverse } from 'util.js';
+import { traverse } from 'utilites/dependacy/PrimerUtil.js';
 
 export async function main(ns) {
   // let rooted = crack(ns, traverse(ns));
