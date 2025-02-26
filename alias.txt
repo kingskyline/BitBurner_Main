@@ -29,4 +29,4 @@ Hacks
 
 
 
-alias xp="run /Hacks/Home-Server/XP/HomeHackerXPDeployer.js;run /Hacks/Bought-Servers/XP/BoughtServerHackerXPDeployer.js"
+alias xp="run /Hacks/Basic/Single-Home-Hacks.js xp"

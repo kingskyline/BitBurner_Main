@@ -11,8 +11,7 @@ export async function main(ns) {
         { script: "/utilites/managers/server-manager.js", delay: 10000 },   
         { script: "/Hacks/Hacked-Servers/Early/EarlyhackerDeployer.js", delay: 10000 },
         { script: "/Hacks/Bought-Servers/Early/BoughtServerHackerDeployer.js", delay: 10000 },
-        { script: "/Hacks/Home-Server/Early/HomeHackerDeployer.js", delay: 10000 },
-        { script: "/Hacks/Home-Server/XP/HomeHackerXPDeployer.js", delay: 10000 }
+        { script: "/Hacks/Home-Server/Early/HomeHackerDeployer.js", delay: 10000 }
 
 
      //   { script: "/stats/ShowHackedServersIncome.js", delay: 10000 },
