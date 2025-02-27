@@ -72,7 +72,7 @@ export async function main(ns) {
         while (true) {
             await ns.sleep(1); // Allow proper concurrency
             ns.scriptKill("/Hacks/Basic/Single-Home-Hacks.js", "home");
-            await runIfNotRunning("/Hacks/Basic/Single-Home-Hacks.js", ["xp"]);
+            await runIfNotRunning("Hacks/Basic/Single-Home-XP-Hacks.js", ["xp"]);
             
             let xpCountdown = 5 * 60; // 5 minutes in seconds
             while (xpCountdown > 0) {
@@ -81,7 +81,7 @@ export async function main(ns) {
                 xpCountdown -= 60; // Decrease by 60 seconds
             }
             
-            ns.scriptKill("/Hacks/Basic/Single-Home-Hacks.js", "home");
+            ns.scriptKill("Hacks/Basic/Single-Home-XP-Hacks.js", "home");
 
             for (let target of targets) {
                 if (ns.getHackingLevel() >= ns.getServerRequiredHackingLevel(target)) {
