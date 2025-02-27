@@ -50,6 +50,7 @@ export async function main(ns) {
     }
 
     // Run various utility scripts
+    await runIfNotRunning("Hacks/contracts/WorkForFactions.js");
     await runIfNotRunning("Hacks/contracts/SubnetGame.js");
     await runIfNotRunning("utilites/managers/tor-manager.js");
     await runIfNotRunning("utilites/managers/program-manager.js");
