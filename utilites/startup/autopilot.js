@@ -84,19 +84,22 @@ export async function main(ns) {
             
             ns.scriptKill("Hacks/Basic/Single-Home-XP-Hacks.js", "home");
 
-            for (let target of targets) {
-                if (ns.getHackingLevel() >= ns.getServerRequiredHackingLevel(target)) {
-                    await runIfNotRunning("/Hacks/Basic/Single-Home-Hacks.js", [target]);
-                    let targetCountdown = 25 * 60; // 25 minutes in seconds
-                    while (targetCountdown > 0) {
-                        log(`💰 Hacking ${target} for ${formatTime(targetCountdown)}`);
-                        await ns.sleep(60000); // Update every 60 seconds
-                        targetCountdown -= 60; // Decrease by 60 seconds
-                    }
-                    ns.scriptKill("/Hacks/Basic/Single-Home-Hacks.js", "home");
-                    break;
-                }
+            // Start all target hacks using the new script
+            await runIfNotRunning("utilites/startup/start-all-Home-Hacks.js");
+
+            // Wait for the target hacks to finish
+            let targetCountdown = 25 * 60; // 25 minutes in seconds
+            while (targetCountdown > 0) {
+                log(`💰 Hacking targets for ${formatTime(targetCountdown)}`);
+                await ns.sleep(60000); // Update every 60 seconds
+                targetCountdown -= 60; // Decrease by 60 seconds
             }
+
+            // Stop all target hacks after completion
+            ns.scriptKill("/Hacks/Basic/Single-Home-Hacks.js", "home");
+
+            // Return to XP farming
+            await runIfNotRunning("Hacks/Basic/Single-Home-XP-Hacks.js", ["xp"]);
         }
     }
 
